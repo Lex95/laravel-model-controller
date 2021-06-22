@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <ul>
+        @foreach($moviesList as $movie)
+        <li>{{ $movie->title }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
